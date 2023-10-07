@@ -26,4 +26,10 @@ RSpec.describe DannyDevito do
 
     expect(@dv.prevent_distractions(str)).to eq("Safe watching!")
   end
+
+  it 'returns different phrases depending on keywords' do 
+    str = "Hot pictures of danny DeVito"
+
+    expect(@dv.prevent_distractions(str)).to eq("Safe watching!")
+  end
 end
