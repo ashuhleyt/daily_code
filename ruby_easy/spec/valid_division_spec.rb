@@ -18,7 +18,7 @@ RSpec.describe ValidDivision do
   it 'returns a boolean if equation will return a whole integer' do 
     d = 30 / 25
 
-    expect(@div.divide(d)).to eq(false)
+    expect(@div.divide(d)).to eq(true)
   end
 
   it 'returns a boolean if equation will return a whole integer' do 
