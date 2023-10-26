@@ -1,6 +1,5 @@
 class CharApp
   def char_appears(sentence, char)
-    # require 'pry'; binding.pry
     split_sentence = sentence.split
     letter = char.downcase
     split_sentence.map do | word |
