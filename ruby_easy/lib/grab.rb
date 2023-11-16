@@ -8,11 +8,10 @@ class Grab
         current_digit += c
       else
         sum += current_digit.to_i if current_digit.length >= 2
-        current_digit = ''  # reset current_digit for the next sequence of digits
-      end
+        current_digit = ''  
     end
 
-    sum += current_digit.to_i if current_digit.length >= 2  # Check for any remaining digits at the end of the string
+    sum += current_digit.to_i if current_digit.length >= 2  
     sum
   end
 end
