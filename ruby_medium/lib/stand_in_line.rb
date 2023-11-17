@@ -4,7 +4,7 @@ class StandInLine
       array << number 
       array.drop(1)
     else 
-      return "No array has been selected"
+      "No array has been selected"
     end
   end
 end
