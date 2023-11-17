@@ -26,5 +26,4 @@ RSpec.describe Lz do
 
     expect(@zerohero.longest_zero(s)).to eq("")
   end
-
 end
