@@ -13,8 +13,6 @@ class Speak
       modified_string.join(" ") + ("...")
   end
 end
-
-
 # words = str.split
 # n = [n, words.length].min  # Ensure n does not exceed the number of words
 # require 'pry'; binding.pry
