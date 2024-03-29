@@ -14,13 +14,27 @@ RSpec.describe SubThe do
 
     expect(@repl.replace_the(str)).to eq("a dog and an envelope")
   end
+
+  it 'replaces the The with a or an, dependent' do 
+    str = "the boy ran at the wall"
+
+    expect(@repl.replace_the(str)).to eq("a boy ran at a wall")
+  end
+
+  it 'replaces the The with a or an, dependent' do 
+    str = "the egg, the spoon and the espionage"
+
+    expect(@repl.replace_the(str)).to eq("an egg, a spoon and an espionage")
+  end
+
+  it 'replaces the The with a or an, dependent' do 
+    str = "where is the spoon"
+
+    expect(@repl.replace_the(str)).to eq("where is a spoon")
+  end
 end
 
-# if the next word begins with a vowel, the is an 
 
-# Test.assert_equals(replace_the("the boy ran at the wall"), "a boy ran at a wall")
-# Test.assert_equals(replace_the("the egg, the spoon and the espionage"), "an egg, a spoon and an espionage")
-# Test.assert_equals(replace_the("where is the spoon"), "where is a spoon")
 # Test.assert_equals(replace_the("the quick brown fox jumps over the lazy dog"), "a quick brown fox jumps over a lazy dog")
 # Test.assert_equals(replace_the("this edabit thing is quite neat"), "this edabit thing is quite neat")
 # Test.assert_equals(replace_the("the lion, witch and the wardrobe"), "a lion, witch and a wardrobe")
